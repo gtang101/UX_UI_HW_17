@@ -129,7 +129,39 @@ body{
      height: 50vh;
      background-color: #15202B;
      color: white;
-     border: 1px solid white;
+     /* border: 1px solid white; */
+     display: grid;
+     grid-template-columns: repeat(8,1fr);
+     grid-template-rows: 50% 1fr 3fr;
+}
+
+.cardImg{
+     grid-column: 4/9;
+     grid-row: 1/4; 
+     overflow: hidden;
+}
+
+.cardImg img{
+     object-fit: fill;
+     max-width: 100%;    
+}
+
+.cardTitle{
+     background-color: rgb(34,48,60);
+     z-index: 300;
+     width: 4fr;
+     grid-column: 1/5;
+     grid-row: 2/3;
+     padding: 1rem 0.5rem 1rem 0.5rem;
+     font-size: 32px; 
+}
+
+.cardSubtitle {
+     grid-column: 1/4;
+     grid-row: 3/4;
+     padding: 1rem 0.5rem 1rem 1rem;
+     font-size: 24px;
+     align-self: flex-end;
 }
 
 /* Footer */
